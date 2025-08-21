@@ -1,0 +1,134 @@
+.team {
+  padding: 6rem 0;
+  background: var(--background-dark);
+}
+
+.team__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.team__title {
+  font-size: var(--font-size-4xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.team__title.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.team__subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--text-secondary);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease 0.2s;
+}
+
+.team__subtitle.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.team__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.team__card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: all var(--transition-medium);
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.team__card--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.team__card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(255, 215, 0, 0.1);
+  border-color: var(--accent-color);
+}
+
+.team__card-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1.5rem;
+  border: 3px solid var(--accent-color);
+  position: relative;
+}
+
+.team__card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-medium);
+}
+
+.team__card:hover .team__card-image img {
+  transform: scale(1.1);
+}
+
+.team__card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.team__card-name {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.team__card-position {
+  font-size: var(--font-size-sm);
+  color: var(--accent-color);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .team {
+    padding: 4rem 0;
+  }
+
+  .team__grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .team__card {
+    padding: 1.5rem;
+  }
+
+  .team__card-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .team__title {
+    font-size: var(--font-size-3xl);
+  }
+}
+

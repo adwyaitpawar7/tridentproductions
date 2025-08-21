@@ -1,38 +1,46 @@
 .App {
+  text-align: left;
+}
+
+.main-content {
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+/* Page Hero Styles */
+.page-hero {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  padding: 120px 0 80px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page-hero__title {
+  font-size: var(--font-size-4xl);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--accent-color), #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.page-hero__subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    padding: 100px 0 60px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .page-hero__title {
+    font-size: var(--font-size-3xl);
   }
-  to {
-    transform: rotate(360deg);
+  
+  .page-hero__subtitle {
+    font-size: var(--font-size-base);
   }
 }
