@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tridentproductions/static/css/main.edc21770.css",
+    "main.js": "/tridentproductions/static/js/main.05ef8c0b.js",
+    "index.html": "/tridentproductions/index.html",
+    "main.edc21770.css.map": "/tridentproductions/static/css/main.edc21770.css.map",
+    "main.05ef8c0b.js.map": "/tridentproductions/static/js/main.05ef8c0b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.edc21770.css",
+    "static/js/main.05ef8c0b.js"
+  ]
+}
