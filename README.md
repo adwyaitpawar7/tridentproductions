@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🎬 Trident Productions - React.js Website
 
 A modern, responsive website for Trident Productions built with React.js, featuring professional design, smooth animations, and comprehensive media production services showcase.
